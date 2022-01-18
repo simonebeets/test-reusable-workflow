@@ -9,6 +9,9 @@ on:
       job-name:
         required: true
         type: string
+    secrets:
+      SLACK_WEBHOOK_URL:
+        required: true
 
 jobs:
   send-notification:
