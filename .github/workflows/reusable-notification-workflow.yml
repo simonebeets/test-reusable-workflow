@@ -33,7 +33,7 @@ jobs:
                             "type": "section",
                             "text": {
                                 "type": "mrkdwn",
-                                "text": "Type: *${{ github.event_name }}*\nTitle: *<${{ github.event.pull_request.html_url || github.event.head_commit.url }}|${{ github.event.pull_request.title || github.event.head_commit.message || 'None' }}>*\nBranch: *[${{ github.head_ref || github.ref }}] to [${{ github.event.base_ref || 'None' }}]*\nRepository: *<${{ github.event.repository.html_url }}|${{ github.repository }}>*\nUser: *${{ github.actor || github.event.pull_request.user.login }}*\n"
+                                "text": "Type: *${{ github.event_name }}*\nTitle: *<${{ github.event.pull_request.html_url || github.event.head_commit.url }}|${{ github.event.pull_request.title || github.event.head_commit.message || 'None' }}>*\nBranch: *[${{ github.head_ref || github.ref }}] to [${{ github.base_ref || 'None' }}]*\nRepository: *<${{ github.event.repository.html_url }}|${{ github.repository }}>*\nUser: *${{ github.actor || github.event.pull_request.user.login }}*\n"
                             }
                         },
                         {
